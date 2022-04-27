@@ -1,0 +1,57 @@
+@font-face {
+    font-family: OdinFont;
+    src: url(./Norse-Bold.otf);
+}
+
+:root {
+ --form_height: 80vh
+}
+
+body {
+    padding: 20px;
+    background-color: #222222;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 2px;
+    border-color: royalblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#background_container {
+    width: 30vw;
+    height: 80vh;
+    background-image: url(./Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#banner {
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    top: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: OdinFont;
+    font-size: 80px;
+    background-color: rgba(29, 29, 29, 0.521);
+}
+
+#signup_form_container {
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 2;
+    background-color: rgb(240, 240, 240);
+}
