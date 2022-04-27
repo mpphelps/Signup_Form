@@ -1,15 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Yellowtail&display=swap');
+
 @font-face {
     font-family: OdinFont;
     src: url(./Norse-Bold.otf);
 }
 
 :root {
- --form_height: 80vh
+ --form_height: 50vh
 }
 
 body {
-    padding: 20px;
     background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    gap: 3rem;
+}
+
+button {
+    background-color: #596D48;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 1px solid #D6D9DC;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+
+footer{
+    text-align: center;
+    font-family: Roboto;
+    color: #D6D9DC;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #form {
@@ -17,25 +58,27 @@ body {
     flex-direction: row;
     border-style: solid;
     border-width: 2px;
-    border-color: royalblue;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 0 15px 2px #DDD;
 }
 
 #background_container {
     width: 30vw;
-    height: 80vh;
+    height: var(--form_height);
     background-image: url(./Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #banner {
     text-align: center;
     color: aliceblue;
     position: relative;
-    top: 30vh;
+    top: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,13 +88,69 @@ body {
     background-color: rgba(29, 29, 29, 0.521);
 }
 
+#banner_footer {
+    color: #D6D9DC;
+    text-align: end;
+    padding: 10px;
+    font-family: Roboto;
+    font-size: 10px;
+}
+
 #signup_form_container {
-    width: 70vw;
-    height: 80vh;
+    width: 55vw;
+    height: var(--form_height);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     flex-grow: 2;
-    background-color: rgb(240, 240, 240);
+    background-color: #f9fafb;
+    display: flex;
+    font-family: Roboto;
+}
+
+#signUpForm {
+    display: flex;
+    width: 60vw;
+    flex-flow: row wrap;
+}
+
+#signUpForm div{
+    display: flex;
+    flex-direction: column;
+    font-size: .7rem;
+}
+
+#header_section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 20px;
+}
+
+#input_section{
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-flow: row wrap;
+}
+
+.form_cell {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#footer_section{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
